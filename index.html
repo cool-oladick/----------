@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>День тиженя</title>
+</head>
+
+<body>
+    <h1>Обери день тижня</h1>
+    <script>
+        let x = prompt("Оберить день тижня цифрою.");
+        if (isNaN(x)) {
+            alert("Ми не дурні. Оберіть число.");
+        }
+        else {
+            if (x >= 1 && x <= 5) {
+                alert("Ви обрали будній день.");
+            }
+            else if (x == 6 || x == 7) {
+                alert("Ви обрали вихідний");
+            }
+            else {
+                alert("Введіть правильне число від 1 до 7!");
+            }
+        }
+    </script>
+</body>
+
+</html>

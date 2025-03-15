@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рівняння</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("Введіть перше число або цифру:");
+        let b = prompt("Введіть друге число або цифру:");
+
+        a = Number(a);
+        b = Number(b);
+
+        if (isNaN(a) || isNaN(b)) {
+            alert("Помилка! Введені значення мають бути числами.");
+        }
+         else if (a === 0) {
+            alert("Рівняння не має розв’язку, оскільки a = 0.");
+        }
+         else {
+            let x = -b / a;
+            alert("Розв’язок рівняння: x = " + x);
+        }
+    </script>
+</body>
+
+</html>
